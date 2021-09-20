@@ -1,0 +1,220 @@
+
+/* Para los arreglos se utilizo la manera estática por defecto de hacer las cosas */
+/* Tipo ESTÁTICO */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Arreglo de selectores */
+h1,	h3{
+	color:red;
+}
+
+/* Arreglo de encabezado de página */
+header{
+color:red;
+}
+header, .main, footer{
+	width:100%;
+	max-width:1000px;
+	margin:10px auto;
+}
+
+/* Las cajas de bloque se distribuyen verticalmente según el orden 
+en el que aparecen en el código fuente */
+
+/* Arreglos de navegación */
+header nav{
+	font-size:28px;
+	background:#C0392B;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align:middle;
+	margin:10px 2px;
+	box-shadow:0px 5px 0px #fff;
+}
+
+/* Arreglo de navegación en lista */
+header nav ul{
+	list-style:none;	
+}
+
+header nav ul li{
+	float:left;
+}
+
+header nav ul li a{
+	padding: 10px 20px;
+	display:inline-block;
+	vertical-align:middle;
+	color:#fff;
+	text-decoration:none;
+}
+
+header nav ul li a:hover{
+	background:#B03A2E;
+}
+
+/* Arreglo en la parte de los articles */
+.main .articles{
+	width:100%;
+	margin-right:1.5%;
+	float:left;
+	color:#fff;
+	text-decoration:none;
+}
+
+.main .articles article{
+	padding:20px;
+	background:#C0392B;
+	margin-bottom:20px;
+	text-decoration:none;
+
+}
+footer{
+	background:#C0392B;
+	color:#fff;
+	clear:both;
+	padding:10px 0px;
+	text-align:center;
+}
+
+
+div{
+	text-align:center;
+	font-size:20px;
+	color:#fff;
+	background:#C0392B;
+	margin:2px 200px;
+	border:10px solid #641E16;
+}
+
+th{
+	color:#fff;
+	border:4px solid #C0392B;
+	background:#C0392B;
+}
+
+table td{
+	color:#fff;
+	border:4px solid #C0392B;
+	background:#C0392B;
+	padding:20px;
+}
+
+table tr:hover{
+	color:#000;
+	background:#B03A2E;
+}
+
+table td:hover{
+	background:#B03A2E;
+	color:#000;
+}
+
+.Reg{
+	width:95%;
+	max-width:450px;
+	background-image:url(../images/images.jfif);
+	padding:8px;
+	margin:auto;
+	margin-top:100px;
+	color:#000; 
+	box-shadow:5px 5px 5px #000;
+}
+.Reg h2{
+	font-size:30px;
+	color:#fff;
+	margin-bottom:20px;
+}
+.main{
+	width:85%;
+	background:#B03A2E;
+	padding:10px;
+	border-radius:3px;
+	margin-bottom:16px;
+	border:1px solid #000;
+	font-family:'Times New Rooman';
+	font-size:25px;
+}
+.Reg p{
+	height:35px;
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	line-height:40px;
+}
+
+
+.Reg .boton{
+	width:100%;
+	border-radius:5px;
+	background:#B03A2E;
+	border:none;
+	font-family:'Times New Rooman';
+	padding:12px;
+	color:#fff;
+	margin:20px 0;
+	font-size:20px;
+}
+.Acceso{
+	width:95%;
+	max-width:450px;
+	background-image:url(../images/images.jfif);
+	padding:8px;
+	margin:auto;
+	margin-top:100px;
+	color:#000; 
+	box-shadow:5px 5px 5px #000;
+}
+.Acceso h2{
+	font-size:30px;
+	color:#fff;
+	margin-bottom:20px;
+}
+.main{
+	width:85%;
+	background:#B03A2E;
+	padding:10px;
+	border-radius:3px;
+	margin-bottom:16px;
+	border:1px solid #000;
+	font-family:'Times New Rooman';
+	font-size:25px;
+}
+.Acceso p{
+	height:35px;
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	line-height:40px;
+}
+
+
+.Acceso .boton{
+	width:100%;
+	border-radius:5px;
+	background:#B03A2E;
+	border:none;
+	font-family:'Times New Rooman';
+	padding:12px;
+	color:#fff;
+	margin:20px 0;
+	font-size:20px;
+}
+
+
+/* Adaptación de página para cualquier tipo de dispositivo
+con parámetros específicos */
+@media (max-width:450px){
+	.header .li{
+		grid-template-columns:1fr;
+		font-size:2.5rem;
+	}
+	@media (max-width: 450px){
+		.Seg{
+			font-size:1.8rem;
+		}
+	}
